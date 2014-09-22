@@ -52,9 +52,9 @@
             this.grb_Header.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grb_Header.Controls.Add(this.pictureBox2);
             this.grb_Header.Controls.Add(this.pictureBox1);
-            this.grb_Header.Location = new System.Drawing.Point(24, 38);
+            this.grb_Header.Location = new System.Drawing.Point(12, 38);
             this.grb_Header.Name = "grb_Header";
-            this.grb_Header.Size = new System.Drawing.Size(799, 124);
+            this.grb_Header.Size = new System.Drawing.Size(828, 124);
             this.grb_Header.TabIndex = 2;
             this.grb_Header.TabStop = false;
             // 
@@ -92,6 +92,7 @@
             this.btn_login.TabIndex = 4;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // txtPassword
             // 
@@ -143,6 +144,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
             // pictureBox2
             // 

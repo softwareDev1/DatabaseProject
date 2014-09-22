@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FilmCrave
 {
-    public partial class RegisterMember : Form
+    public partial class Home : Form
     {
-        public RegisterMember()
+        public Home()
         {
             InitializeComponent();
         }
@@ -22,15 +22,5 @@ namespace FilmCrave
             this.Close();
         }
 
-        private void btn_Register_Click(object sender, EventArgs e)
-        {
-            MemberProfile profile = new MemberProfile();
-           profile.Show();
-        }
-
-        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

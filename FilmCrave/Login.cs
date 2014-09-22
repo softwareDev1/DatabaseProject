@@ -17,19 +17,21 @@ namespace FilmCrave
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-                    }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void lblLink_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             RegisterMember register = new RegisterMember();
             register.Show();
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+        }
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

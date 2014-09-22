@@ -36,18 +36,20 @@
             this.txt_Search = new System.Windows.Forms.TextBox();
             this.lbl_Search = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.lbl_comment = new System.Windows.Forms.Label();
+            this.rtb_comment = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_Search = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.grb_Header = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rtb_comment = new System.Windows.Forms.RichTextBox();
-            this.lbl_comment = new System.Windows.Forms.Label();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.grb_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,10 +61,12 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem,
             this.homeToolStripMenuItem,
-            this.watchFilmTrailersToolStripMenuItem});
+            this.watchFilmTrailersToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.profileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(853, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1052, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,6 +77,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // homeToolStripMenuItem
             // 
@@ -109,26 +114,35 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Controls.Add(this.lbl_comment);
             this.groupBox1.Controls.Add(this.rtb_comment);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.axWindowsMediaPlayer1);
-            this.groupBox1.Location = new System.Drawing.Point(23, 178);
+            this.groupBox1.Location = new System.Drawing.Point(12, 178);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(799, 434);
+            this.groupBox1.Size = new System.Drawing.Size(1028, 434);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // axWindowsMediaPlayer1
+            // lbl_comment
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(24, 94);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(555, 313);
-            this.axWindowsMediaPlayer1.TabIndex = 11;
+            this.lbl_comment.AutoSize = true;
+            this.lbl_comment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_comment.Location = new System.Drawing.Point(752, 41);
+            this.lbl_comment.Name = "lbl_comment";
+            this.lbl_comment.Size = new System.Drawing.Size(111, 17);
+            this.lbl_comment.TabIndex = 14;
+            this.lbl_comment.Text = "Post Comment";
+            // 
+            // rtb_comment
+            // 
+            this.rtb_comment.Location = new System.Drawing.Point(601, 94);
+            this.rtb_comment.Name = "rtb_comment";
+            this.rtb_comment.Size = new System.Drawing.Size(400, 313);
+            this.rtb_comment.TabIndex = 13;
+            this.rtb_comment.Text = "";
             // 
             // groupBox2
             // 
@@ -152,14 +166,23 @@
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = true;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(24, 94);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(555, 313);
+            this.axWindowsMediaPlayer1.TabIndex = 11;
+            // 
             // grb_Header
             // 
             this.grb_Header.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grb_Header.Controls.Add(this.pictureBox2);
             this.grb_Header.Controls.Add(this.pictureBox1);
-            this.grb_Header.Location = new System.Drawing.Point(23, 37);
+            this.grb_Header.Location = new System.Drawing.Point(12, 37);
             this.grb_Header.Name = "grb_Header";
-            this.grb_Header.Size = new System.Drawing.Size(799, 124);
+            this.grb_Header.Size = new System.Drawing.Size(1028, 124);
             this.grb_Header.TabIndex = 12;
             this.grb_Header.TabStop = false;
             // 
@@ -175,36 +198,34 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::FilmCrave.Properties.Resources.reel;
-            this.pictureBox1.Location = new System.Drawing.Point(474, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(700, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(301, 101);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // rtb_comment
+            // toolStripMenuItem1
             // 
-            this.rtb_comment.Location = new System.Drawing.Point(601, 94);
-            this.rtb_comment.Name = "rtb_comment";
-            this.rtb_comment.Size = new System.Drawing.Size(174, 313);
-            this.rtb_comment.TabIndex = 13;
-            this.rtb_comment.Text = "";
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(125, 20);
+            this.toolStripMenuItem1.Text = "Watch Film Trailers";
             // 
-            // lbl_comment
+            // profileToolStripMenuItem
             // 
-            this.lbl_comment.AutoSize = true;
-            this.lbl_comment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_comment.Location = new System.Drawing.Point(630, 41);
-            this.lbl_comment.Name = "lbl_comment";
-            this.lbl_comment.Size = new System.Drawing.Size(111, 17);
-            this.lbl_comment.TabIndex = 14;
-            this.lbl_comment.Text = "Post Comment";
+            this.profileToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.profileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.profileToolStripMenuItem.Text = "Profile";
             // 
             // View_trailers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(853, 634);
+            this.ClientSize = new System.Drawing.Size(1052, 634);
             this.Controls.Add(this.grb_Header);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
@@ -215,9 +236,9 @@
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.grb_Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -243,5 +264,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_comment;
         private System.Windows.Forms.RichTextBox rtb_comment;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
     }
 }

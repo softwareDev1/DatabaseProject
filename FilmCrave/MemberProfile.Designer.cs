@@ -31,27 +31,27 @@
             this.grb_Header = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grp_box_Member = new System.Windows.Forms.GroupBox();
-            this.lbl_Name = new System.Windows.Forms.Label();
-            this.lbl_Email = new System.Windows.Forms.Label();
-            this.lbl_Password = new System.Windows.Forms.Label();
-            this.lbl_Education = new System.Windows.Forms.Label();
-            this.lbl_communities = new System.Windows.Forms.Label();
-            this.lbl_Connections = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Edit = new System.Windows.Forms.Button();
-            this.btn_editPicture = new System.Windows.Forms.Button();
-            this.txt_name = new System.Windows.Forms.TextBox();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.txt_education = new System.Windows.Forms.TextBox();
-            this.cmb_comunities = new System.Windows.Forms.ComboBox();
-            this.txt_connections = new System.Windows.Forms.TextBox();
-            this.txt_points = new System.Windows.Forms.TextBox();
-            this.rtb_Summary = new System.Windows.Forms.RichTextBox();
-            this.lbl_profile = new System.Windows.Forms.Label();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.watchFilmTrailersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grp_box_Member = new System.Windows.Forms.GroupBox();
+            this.lbl_profile = new System.Windows.Forms.Label();
+            this.rtb_Summary = new System.Windows.Forms.RichTextBox();
+            this.txt_points = new System.Windows.Forms.TextBox();
+            this.txt_connections = new System.Windows.Forms.TextBox();
+            this.cmb_comunities = new System.Windows.Forms.ComboBox();
+            this.txt_education = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.btn_editPicture = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Connections = new System.Windows.Forms.Label();
+            this.lbl_communities = new System.Windows.Forms.Label();
+            this.lbl_Education = new System.Windows.Forms.Label();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.lbl_Email = new System.Windows.Forms.Label();
+            this.lbl_Name = new System.Windows.Forms.Label();
             this.profilePictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -94,10 +94,28 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.homeToolStripMenuItem.Text = "Home";
+            // 
+            // watchFilmTrailersToolStripMenuItem
+            // 
+            this.watchFilmTrailersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.watchFilmTrailersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.watchFilmTrailersToolStripMenuItem.Name = "watchFilmTrailersToolStripMenuItem";
+            this.watchFilmTrailersToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.watchFilmTrailersToolStripMenuItem.Text = "Watch Film Trailers";
+            this.watchFilmTrailersToolStripMenuItem.Click += new System.EventHandler(this.watchFilmTrailersToolStripMenuItem_Click);
             // 
             // grp_box_Member
             // 
-            this.grp_box_Member.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.grp_box_Member.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grp_box_Member.Controls.Add(this.lbl_profile);
             this.grp_box_Member.Controls.Add(this.rtb_Summary);
             this.grp_box_Member.Controls.Add(this.txt_points);
@@ -124,78 +142,76 @@
             this.grp_box_Member.TabStop = false;
             this.grp_box_Member.Text = "Member Profile";
             // 
-            // lbl_Name
+            // lbl_profile
             // 
-            this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Location = new System.Drawing.Point(15, 159);
-            this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(35, 13);
-            this.lbl_Name.TabIndex = 1;
-            this.lbl_Name.Text = "Name";
+            this.lbl_profile.AutoSize = true;
+            this.lbl_profile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_profile.Location = new System.Drawing.Point(532, 33);
+            this.lbl_profile.Name = "lbl_profile";
+            this.lbl_profile.Size = new System.Drawing.Size(135, 20);
+            this.lbl_profile.TabIndex = 19;
+            this.lbl_profile.Text = "Personal Profile";
             // 
-            // lbl_Email
+            // rtb_Summary
             // 
-            this.lbl_Email.AutoSize = true;
-            this.lbl_Email.Location = new System.Drawing.Point(15, 188);
-            this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(36, 13);
-            this.lbl_Email.TabIndex = 2;
-            this.lbl_Email.Text = "E Mail";
+            this.rtb_Summary.Location = new System.Drawing.Point(436, 74);
+            this.rtb_Summary.Name = "rtb_Summary";
+            this.rtb_Summary.Size = new System.Drawing.Size(339, 292);
+            this.rtb_Summary.TabIndex = 18;
+            this.rtb_Summary.Text = "";
             // 
-            // lbl_Password
+            // txt_points
             // 
-            this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Location = new System.Drawing.Point(15, 220);
-            this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(53, 13);
-            this.lbl_Password.TabIndex = 4;
-            this.lbl_Password.Text = "Password";
+            this.txt_points.Location = new System.Drawing.Point(121, 346);
+            this.txt_points.Name = "txt_points";
+            this.txt_points.ReadOnly = true;
+            this.txt_points.Size = new System.Drawing.Size(149, 20);
+            this.txt_points.TabIndex = 17;
             // 
-            // lbl_Education
+            // txt_connections
             // 
-            this.lbl_Education.AutoSize = true;
-            this.lbl_Education.Location = new System.Drawing.Point(15, 251);
-            this.lbl_Education.Name = "lbl_Education";
-            this.lbl_Education.Size = new System.Drawing.Size(55, 13);
-            this.lbl_Education.TabIndex = 5;
-            this.lbl_Education.Text = "Education";
+            this.txt_connections.Location = new System.Drawing.Point(121, 312);
+            this.txt_connections.Name = "txt_connections";
+            this.txt_connections.ReadOnly = true;
+            this.txt_connections.Size = new System.Drawing.Size(149, 20);
+            this.txt_connections.TabIndex = 16;
             // 
-            // lbl_communities
+            // cmb_comunities
             // 
-            this.lbl_communities.AutoSize = true;
-            this.lbl_communities.Location = new System.Drawing.Point(15, 282);
-            this.lbl_communities.Name = "lbl_communities";
-            this.lbl_communities.Size = new System.Drawing.Size(66, 13);
-            this.lbl_communities.TabIndex = 6;
-            this.lbl_communities.Text = "Communities";
+            this.cmb_comunities.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_comunities.FormattingEnabled = true;
+            this.cmb_comunities.Location = new System.Drawing.Point(121, 279);
+            this.cmb_comunities.Name = "cmb_comunities";
+            this.cmb_comunities.Size = new System.Drawing.Size(149, 21);
+            this.cmb_comunities.TabIndex = 15;
             // 
-            // lbl_Connections
+            // txt_education
             // 
-            this.lbl_Connections.AutoSize = true;
-            this.lbl_Connections.Location = new System.Drawing.Point(15, 315);
-            this.lbl_Connections.Name = "lbl_Connections";
-            this.lbl_Connections.Size = new System.Drawing.Size(66, 13);
-            this.lbl_Connections.TabIndex = 7;
-            this.lbl_Connections.Text = "Connections";
+            this.txt_education.Location = new System.Drawing.Point(121, 248);
+            this.txt_education.Name = "txt_education";
+            this.txt_education.Size = new System.Drawing.Size(149, 20);
+            this.txt_education.TabIndex = 14;
             // 
-            // label1
+            // txt_password
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 349);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Review Points ";
+            this.txt_password.Location = new System.Drawing.Point(121, 217);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(149, 20);
+            this.txt_password.TabIndex = 13;
             // 
-            // btn_Edit
+            // txt_email
             // 
-            this.btn_Edit.Location = new System.Drawing.Point(218, 396);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(75, 23);
-            this.btn_Edit.TabIndex = 9;
-            this.btn_Edit.Text = "Edit Profile";
-            this.btn_Edit.UseVisualStyleBackColor = true;
-            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
+            this.txt_email.Location = new System.Drawing.Point(121, 185);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(149, 20);
+            this.txt_email.TabIndex = 12;
+            // 
+            // txt_name
+            // 
+            this.txt_name.Location = new System.Drawing.Point(121, 156);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(149, 20);
+            this.txt_name.TabIndex = 11;
             // 
             // btn_editPicture
             // 
@@ -207,93 +223,78 @@
             this.btn_editPicture.UseVisualStyleBackColor = true;
             this.btn_editPicture.Click += new System.EventHandler(this.btn_editPicture_Click);
             // 
-            // txt_name
+            // btn_Edit
             // 
-            this.txt_name.Location = new System.Drawing.Point(121, 156);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(149, 20);
-            this.txt_name.TabIndex = 11;
+            this.btn_Edit.Location = new System.Drawing.Point(218, 396);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit.TabIndex = 9;
+            this.btn_Edit.Text = "Edit Profile";
+            this.btn_Edit.UseVisualStyleBackColor = true;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
-            // txt_email
+            // label1
             // 
-            this.txt_email.Location = new System.Drawing.Point(121, 185);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(149, 20);
-            this.txt_email.TabIndex = 12;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 349);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Review Points ";
             // 
-            // txt_password
+            // lbl_Connections
             // 
-            this.txt_password.Location = new System.Drawing.Point(121, 217);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(149, 20);
-            this.txt_password.TabIndex = 13;
+            this.lbl_Connections.AutoSize = true;
+            this.lbl_Connections.Location = new System.Drawing.Point(15, 315);
+            this.lbl_Connections.Name = "lbl_Connections";
+            this.lbl_Connections.Size = new System.Drawing.Size(66, 13);
+            this.lbl_Connections.TabIndex = 7;
+            this.lbl_Connections.Text = "Connections";
             // 
-            // txt_education
+            // lbl_communities
             // 
-            this.txt_education.Location = new System.Drawing.Point(121, 248);
-            this.txt_education.Name = "txt_education";
-            this.txt_education.Size = new System.Drawing.Size(149, 20);
-            this.txt_education.TabIndex = 14;
+            this.lbl_communities.AutoSize = true;
+            this.lbl_communities.Location = new System.Drawing.Point(15, 282);
+            this.lbl_communities.Name = "lbl_communities";
+            this.lbl_communities.Size = new System.Drawing.Size(66, 13);
+            this.lbl_communities.TabIndex = 6;
+            this.lbl_communities.Text = "Communities";
             // 
-            // cmb_comunities
+            // lbl_Education
             // 
-            this.cmb_comunities.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_comunities.FormattingEnabled = true;
-            this.cmb_comunities.Location = new System.Drawing.Point(121, 279);
-            this.cmb_comunities.Name = "cmb_comunities";
-            this.cmb_comunities.Size = new System.Drawing.Size(149, 21);
-            this.cmb_comunities.TabIndex = 15;
+            this.lbl_Education.AutoSize = true;
+            this.lbl_Education.Location = new System.Drawing.Point(15, 251);
+            this.lbl_Education.Name = "lbl_Education";
+            this.lbl_Education.Size = new System.Drawing.Size(55, 13);
+            this.lbl_Education.TabIndex = 5;
+            this.lbl_Education.Text = "Education";
             // 
-            // txt_connections
+            // lbl_Password
             // 
-            this.txt_connections.Location = new System.Drawing.Point(121, 312);
-            this.txt_connections.Name = "txt_connections";
-            this.txt_connections.ReadOnly = true;
-            this.txt_connections.Size = new System.Drawing.Size(149, 20);
-            this.txt_connections.TabIndex = 16;
+            this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Location = new System.Drawing.Point(15, 220);
+            this.lbl_Password.Name = "lbl_Password";
+            this.lbl_Password.Size = new System.Drawing.Size(53, 13);
+            this.lbl_Password.TabIndex = 4;
+            this.lbl_Password.Text = "Password";
             // 
-            // txt_points
+            // lbl_Email
             // 
-            this.txt_points.Location = new System.Drawing.Point(121, 346);
-            this.txt_points.Name = "txt_points";
-            this.txt_points.ReadOnly = true;
-            this.txt_points.Size = new System.Drawing.Size(149, 20);
-            this.txt_points.TabIndex = 17;
+            this.lbl_Email.AutoSize = true;
+            this.lbl_Email.Location = new System.Drawing.Point(15, 188);
+            this.lbl_Email.Name = "lbl_Email";
+            this.lbl_Email.Size = new System.Drawing.Size(36, 13);
+            this.lbl_Email.TabIndex = 2;
+            this.lbl_Email.Text = "E Mail";
             // 
-            // rtb_Summary
+            // lbl_Name
             // 
-            this.rtb_Summary.Location = new System.Drawing.Point(436, 74);
-            this.rtb_Summary.Name = "rtb_Summary";
-            this.rtb_Summary.Size = new System.Drawing.Size(339, 292);
-            this.rtb_Summary.TabIndex = 18;
-            this.rtb_Summary.Text = "";
-            // 
-            // lbl_profile
-            // 
-            this.lbl_profile.AutoSize = true;
-            this.lbl_profile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_profile.Location = new System.Drawing.Point(532, 33);
-            this.lbl_profile.Name = "lbl_profile";
-            this.lbl_profile.Size = new System.Drawing.Size(135, 20);
-            this.lbl_profile.TabIndex = 19;
-            this.lbl_profile.Text = "Personal Profile";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            // 
-            // watchFilmTrailersToolStripMenuItem
-            // 
-            this.watchFilmTrailersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.watchFilmTrailersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.watchFilmTrailersToolStripMenuItem.Name = "watchFilmTrailersToolStripMenuItem";
-            this.watchFilmTrailersToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.watchFilmTrailersToolStripMenuItem.Text = "Watch Film Trailers";
-            this.watchFilmTrailersToolStripMenuItem.Click += new System.EventHandler(this.watchFilmTrailersToolStripMenuItem_Click);
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Location = new System.Drawing.Point(15, 159);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(35, 13);
+            this.lbl_Name.TabIndex = 1;
+            this.lbl_Name.Text = "Name";
             // 
             // profilePictureBox
             // 

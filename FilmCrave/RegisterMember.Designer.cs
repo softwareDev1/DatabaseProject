@@ -30,26 +30,26 @@
         {
             this.grb_Header = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbl_Firstname = new System.Windows.Forms.Label();
-            this.lbl_Surname = new System.Windows.Forms.Label();
-            this.lbl_Email = new System.Windows.Forms.Label();
-            this.lbl_Password = new System.Windows.Forms.Label();
-            this.lbl_password2 = new System.Windows.Forms.Label();
-            this.txt_FirstName = new System.Windows.Forms.TextBox();
-            this.txt_Surname = new System.Windows.Forms.TextBox();
-            this.txt_Email = new System.Windows.Forms.TextBox();
-            this.txt_Password = new System.Windows.Forms.TextBox();
-            this.txt_Password2 = new System.Windows.Forms.TextBox();
             this.btn_Register = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_Password2 = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.txt_Surname = new System.Windows.Forms.TextBox();
+            this.txt_FirstName = new System.Windows.Forms.TextBox();
+            this.lbl_password2 = new System.Windows.Forms.Label();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.lbl_Email = new System.Windows.Forms.Label();
+            this.lbl_Surname = new System.Windows.Forms.Label();
+            this.lbl_Firstname = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grb_Header.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grb_Header
@@ -59,7 +59,7 @@
             this.grb_Header.Controls.Add(this.pictureBox1);
             this.grb_Header.Location = new System.Drawing.Point(12, 33);
             this.grb_Header.Name = "grb_Header";
-            this.grb_Header.Size = new System.Drawing.Size(799, 124);
+            this.grb_Header.Size = new System.Drawing.Size(828, 124);
             this.grb_Header.TabIndex = 3;
             this.grb_Header.TabStop = false;
             // 
@@ -84,86 +84,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // lbl_Firstname
-            // 
-            this.lbl_Firstname.AutoSize = true;
-            this.lbl_Firstname.Location = new System.Drawing.Point(43, 33);
-            this.lbl_Firstname.Name = "lbl_Firstname";
-            this.lbl_Firstname.Size = new System.Drawing.Size(57, 13);
-            this.lbl_Firstname.TabIndex = 0;
-            this.lbl_Firstname.Text = "First Name";
-            // 
-            // lbl_Surname
-            // 
-            this.lbl_Surname.AutoSize = true;
-            this.lbl_Surname.Location = new System.Drawing.Point(43, 61);
-            this.lbl_Surname.Name = "lbl_Surname";
-            this.lbl_Surname.Size = new System.Drawing.Size(49, 13);
-            this.lbl_Surname.TabIndex = 1;
-            this.lbl_Surname.Text = "Surname";
-            // 
-            // lbl_Email
-            // 
-            this.lbl_Email.AutoSize = true;
-            this.lbl_Email.Location = new System.Drawing.Point(43, 89);
-            this.lbl_Email.Name = "lbl_Email";
-            this.lbl_Email.Size = new System.Drawing.Size(36, 13);
-            this.lbl_Email.TabIndex = 2;
-            this.lbl_Email.Text = "E Mail";
-            // 
-            // lbl_Password
-            // 
-            this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Location = new System.Drawing.Point(43, 115);
-            this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(53, 13);
-            this.lbl_Password.TabIndex = 4;
-            this.lbl_Password.Text = "Password";
-            // 
-            // lbl_password2
-            // 
-            this.lbl_password2.AutoSize = true;
-            this.lbl_password2.Location = new System.Drawing.Point(43, 143);
-            this.lbl_password2.Name = "lbl_password2";
-            this.lbl_password2.Size = new System.Drawing.Size(104, 13);
-            this.lbl_password2.TabIndex = 5;
-            this.lbl_password2.Text = "Re_Enter_Password";
-            // 
-            // txt_FirstName
-            // 
-            this.txt_FirstName.Location = new System.Drawing.Point(158, 30);
-            this.txt_FirstName.Name = "txt_FirstName";
-            this.txt_FirstName.Size = new System.Drawing.Size(155, 20);
-            this.txt_FirstName.TabIndex = 6;
-            // 
-            // txt_Surname
-            // 
-            this.txt_Surname.Location = new System.Drawing.Point(158, 58);
-            this.txt_Surname.Name = "txt_Surname";
-            this.txt_Surname.Size = new System.Drawing.Size(155, 20);
-            this.txt_Surname.TabIndex = 7;
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.Location = new System.Drawing.Point(158, 86);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(155, 20);
-            this.txt_Email.TabIndex = 8;
-            // 
-            // txt_Password
-            // 
-            this.txt_Password.Location = new System.Drawing.Point(158, 112);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(155, 20);
-            this.txt_Password.TabIndex = 10;
-            // 
-            // txt_Password2
-            // 
-            this.txt_Password2.Location = new System.Drawing.Point(158, 140);
-            this.txt_Password2.Name = "txt_Password2";
-            this.txt_Password2.Size = new System.Drawing.Size(155, 20);
-            this.txt_Password2.TabIndex = 11;
-            // 
             // btn_Register
             // 
             this.btn_Register.Location = new System.Drawing.Point(323, 194);
@@ -174,23 +94,85 @@
             this.btn_Register.UseVisualStyleBackColor = true;
             this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
-            // pictureBox2
+            // txt_Password2
             // 
-            this.pictureBox2.BackgroundImage = global::FilmCrave.Properties.Resources.name;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(281, 73);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.txt_Password2.Location = new System.Drawing.Point(158, 140);
+            this.txt_Password2.Name = "txt_Password2";
+            this.txt_Password2.Size = new System.Drawing.Size(155, 20);
+            this.txt_Password2.TabIndex = 11;
             // 
-            // pictureBox1
+            // txt_Password
             // 
-            this.pictureBox1.BackgroundImage = global::FilmCrave.Properties.Resources.reel;
-            this.pictureBox1.Location = new System.Drawing.Point(474, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(301, 101);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.txt_Password.Location = new System.Drawing.Point(158, 112);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(155, 20);
+            this.txt_Password.TabIndex = 10;
+            // 
+            // txt_Email
+            // 
+            this.txt_Email.Location = new System.Drawing.Point(158, 86);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(155, 20);
+            this.txt_Email.TabIndex = 8;
+            // 
+            // txt_Surname
+            // 
+            this.txt_Surname.Location = new System.Drawing.Point(158, 58);
+            this.txt_Surname.Name = "txt_Surname";
+            this.txt_Surname.Size = new System.Drawing.Size(155, 20);
+            this.txt_Surname.TabIndex = 7;
+            // 
+            // txt_FirstName
+            // 
+            this.txt_FirstName.Location = new System.Drawing.Point(158, 30);
+            this.txt_FirstName.Name = "txt_FirstName";
+            this.txt_FirstName.Size = new System.Drawing.Size(155, 20);
+            this.txt_FirstName.TabIndex = 6;
+            // 
+            // lbl_password2
+            // 
+            this.lbl_password2.AutoSize = true;
+            this.lbl_password2.Location = new System.Drawing.Point(43, 143);
+            this.lbl_password2.Name = "lbl_password2";
+            this.lbl_password2.Size = new System.Drawing.Size(104, 13);
+            this.lbl_password2.TabIndex = 5;
+            this.lbl_password2.Text = "Re_Enter_Password";
+            // 
+            // lbl_Password
+            // 
+            this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Location = new System.Drawing.Point(43, 115);
+            this.lbl_Password.Name = "lbl_Password";
+            this.lbl_Password.Size = new System.Drawing.Size(53, 13);
+            this.lbl_Password.TabIndex = 4;
+            this.lbl_Password.Text = "Password";
+            // 
+            // lbl_Email
+            // 
+            this.lbl_Email.AutoSize = true;
+            this.lbl_Email.Location = new System.Drawing.Point(43, 89);
+            this.lbl_Email.Name = "lbl_Email";
+            this.lbl_Email.Size = new System.Drawing.Size(36, 13);
+            this.lbl_Email.TabIndex = 2;
+            this.lbl_Email.Text = "E Mail";
+            // 
+            // lbl_Surname
+            // 
+            this.lbl_Surname.AutoSize = true;
+            this.lbl_Surname.Location = new System.Drawing.Point(43, 61);
+            this.lbl_Surname.Name = "lbl_Surname";
+            this.lbl_Surname.Size = new System.Drawing.Size(49, 13);
+            this.lbl_Surname.TabIndex = 1;
+            this.lbl_Surname.Text = "Surname";
+            // 
+            // lbl_Firstname
+            // 
+            this.lbl_Firstname.AutoSize = true;
+            this.lbl_Firstname.Location = new System.Drawing.Point(43, 33);
+            this.lbl_Firstname.Name = "lbl_Firstname";
+            this.lbl_Firstname.Size = new System.Drawing.Size(57, 13);
+            this.lbl_Firstname.TabIndex = 0;
+            this.lbl_Firstname.Text = "First Name";
             // 
             // menuStrip1
             // 
@@ -210,6 +192,25 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::FilmCrave.Properties.Resources.name;
+            this.pictureBox2.Location = new System.Drawing.Point(25, 29);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(281, 73);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::FilmCrave.Properties.Resources.reel;
+            this.pictureBox1.Location = new System.Drawing.Point(474, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(301, 101);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // RegisterMember
             // 
@@ -225,10 +226,10 @@
             this.grb_Header.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

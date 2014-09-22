@@ -19,3 +19,4 @@ c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\bin\Debug\
 c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\bin\Debug\AxInterop.WMPLib.dll
 c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\Interop.WMPLib.dll
 c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\pa\Documents\Visual Studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\FilmCrave.Home.resources
