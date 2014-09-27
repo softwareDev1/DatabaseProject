@@ -20,3 +20,11 @@ c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\bin\Debug\
 c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\Interop.WMPLib.dll
 c:\users\pa\documents\visual studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\pa\Documents\Visual Studio 2012\Projects\FilmCrave\FilmCrave\obj\Debug\FilmCrave.Home.resources
+E:\College _2014_2015\DB_Project\FilmCrave\bin\Debug\FilmCrave.exe.config
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\Interop.ShockwaveFlashObjects.dll
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\Interop.WMPLib.dll
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\AxInterop.WMPLib.dll
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\FilmCrave.csproj.ResolveComReference.cache
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\FilmCrave.exe
+E:\College _2014_2015\DB_Project\FilmCrave\obj\Debug\FilmCrave.pdb
